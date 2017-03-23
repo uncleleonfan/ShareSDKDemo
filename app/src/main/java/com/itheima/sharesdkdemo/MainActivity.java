@@ -13,12 +13,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        ShareSDK.initSDK(this,"17a2846dca760");
+        ShareSDK.initSDK(this);
     }
 
     private void showShare() {
-        ShareSDK.initSDK(this);
+
         OnekeyShare oks = new OnekeyShare();
         //关闭sso授权
         oks.disableSSOWhenAuthorize();
