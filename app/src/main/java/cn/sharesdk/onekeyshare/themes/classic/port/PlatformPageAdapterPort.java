@@ -8,12 +8,13 @@
 
 package cn.sharesdk.onekeyshare.themes.classic.port;
 
-import android.content.Context;
-
 import java.util.ArrayList;
 
+import android.content.Context;
 import cn.sharesdk.onekeyshare.themes.classic.PlatformPage;
 import cn.sharesdk.onekeyshare.themes.classic.PlatformPageAdapter;
+
+import com.mob.tools.utils.ResHelper;
 
 /** 竖屏的九宫格页面适配器 */
 public class PlatformPageAdapterPort extends PlatformPageAdapter {
@@ -29,7 +30,7 @@ public class PlatformPageAdapterPort extends PlatformPageAdapter {
 	}
 
 	protected void calculateSize(Context context, ArrayList<Object> plats) {
-		int screenWidth = com.mob.tools.utils.R.getScreenWidth(context);
+		int screenWidth = ResHelper.getScreenWidth(context);
 		lineSize = LINE_SIZE_P;
 
 		float ratio = ((float) screenWidth) / DESIGN_SCREEN_WIDTH_P;

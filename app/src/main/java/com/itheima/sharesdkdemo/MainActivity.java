@@ -25,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
         // title标题，印象笔记、邮箱、信息、微信、人人网和QQ空间等使用
         oks.setTitle("标题");
         // titleUrl是标题的网络链接，QQ和QQ空间等使用
-        oks.setTitleUrl("http://sharesdk.cn");
+//        oks.setTitleUrl("http://sharesdk.cn");
+        oks.setTitleUrl("http://www.toutiao.com/api/article/joke/a60662933718");
         // text是分享文本，所有平台都需要这个字段
         oks.setText("我是分享文本");
         // imagePath是图片的本地路径，Linked-In以外的平台都支持此参数

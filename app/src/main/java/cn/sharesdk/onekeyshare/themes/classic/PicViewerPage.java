@@ -12,11 +12,10 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.ColorDrawable;
 import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import android.widget.ImageView.ScaleType;
-
-import com.mob.tools.gui.ScaledImageView;
-
 import cn.sharesdk.onekeyshare.OnekeySharePage;
 import cn.sharesdk.onekeyshare.OnekeyShareThemeImpl;
+
+import com.mob.tools.gui.ScaledImageView;
 
 /** 图片浏览的视图类 */
 public class PicViewerPage extends OnekeySharePage implements OnGlobalLayoutListener {

@@ -11,6 +11,8 @@ package cn.sharesdk.onekeyshare.themes.classic.land;
 import cn.sharesdk.onekeyshare.OnekeyShareThemeImpl;
 import cn.sharesdk.onekeyshare.themes.classic.FriendListPage;
 
+import com.mob.tools.utils.ResHelper;
+
 /** 横屏的好友列表 */
 public class FriendListPageLand extends FriendListPage {
 	private static final int DESIGN_SCREEN_WIDTH = 1280;
@@ -21,7 +23,7 @@ public class FriendListPageLand extends FriendListPage {
 	}
 
 	protected float getRatio() {
-		float screenWidth = com.mob.tools.utils.R.getScreenWidth(activity);
+		float screenWidth = ResHelper.getScreenWidth(activity);
 		return screenWidth / DESIGN_SCREEN_WIDTH;
 	}
 

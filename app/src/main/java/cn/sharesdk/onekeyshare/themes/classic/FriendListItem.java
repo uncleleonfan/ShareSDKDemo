@@ -16,11 +16,11 @@ import android.view.Gravity;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import cn.sharesdk.onekeyshare.themes.classic.FriendAdapter.Following;
 
 import com.mob.tools.gui.AsyncImageView;
 import com.mob.tools.gui.BitmapProcessor;
-
-import cn.sharesdk.onekeyshare.themes.classic.FriendAdapter.Following;
+import com.mob.tools.utils.ResHelper;
 
 /** 好友列表的item */
 public class FriendListItem extends LinearLayout {
@@ -67,11 +67,11 @@ public class FriendListItem extends LinearLayout {
 		lp.weight = 1;
 		addView(tvName, lp);
 
-		int resId = com.mob.tools.utils.R.getBitmapRes(context, "ssdk_oks_classic_check_checked");
+		int resId = ResHelper.getBitmapRes(context, "ssdk_oks_classic_check_checked");
 		if (resId > 0) {
 			bmChd = BitmapFactory.decodeResource(context.getResources(), resId);
 		}
-		resId = com.mob.tools.utils.R.getBitmapRes(getContext(), "ssdk_oks_classic_check_default");
+		resId = ResHelper.getBitmapRes(getContext(), "ssdk_oks_classic_check_default");
 		if (resId > 0) {
 			bmUnch = BitmapFactory.decodeResource(context.getResources(), resId);
 		}

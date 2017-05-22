@@ -8,14 +8,14 @@
 
 package cn.sharesdk.onekeyshare;
 
-import com.mob.tools.FakeActivity;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 
 import cn.sharesdk.framework.Platform;
 import cn.sharesdk.framework.Platform.ShareParams;
 import cn.sharesdk.framework.PlatformActionListener;
+
+import com.mob.tools.FakeActivity;
 
 /** 快捷分享的基类 */
 public class OnekeySharePage extends FakeActivity {
